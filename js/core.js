@@ -41,6 +41,11 @@ var moduleData = {};
                 }
             }
         },
+
+		getModuleData: function(moduleId){
+			return moduleData[moduleId];
+		},
+		
 		/**
 		 * Returns the namespace specified and creates it if it doesn't exist
 		 * @method namespace
