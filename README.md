@@ -16,6 +16,12 @@
 * Application core is extensible
 * Base library (jQuery YUI etc...) is abstracted in the Application core
 
+###To Run Tests:
+
+* clone project
+* cd scalable-javascript-architecture
+* open jasmine/SpecRunner.html in the browser to want to test
+
 ###TODO:
 
-* Unit testing!
+* Complete unit testing!
