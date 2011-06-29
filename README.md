@@ -20,7 +20,7 @@
 
 * clone project
 * cd scalable-javascript-architecture
-* open jasmine/SpecRunner.html in the browser to want to test
+* open jasmine/SpecRunner.html in the browser you want to test
 
 ###TODO:
 
