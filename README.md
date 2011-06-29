@@ -6,7 +6,7 @@
 ###Key Concepts:
 
 * Loose coupling between modules
-* Consistent sandbox interface to the application core
+* Consistent sandbox interface to the application core (i.e. interfaces over implementation paradigm)
 * Modules only access DOM elements in their box
 * Modules don't create global objects
 * Modules only access the sandbox the rest of the architecture doesn't exist to a module
