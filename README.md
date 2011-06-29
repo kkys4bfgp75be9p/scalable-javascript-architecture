@@ -15,3 +15,7 @@
 * Application core does general error handling
 * Application core is extensible
 * Base library (jQuery YUI etc...) is abstracted in the Application core
+
+###TODO:
+
+* Unit testing!
