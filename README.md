@@ -1,4 +1,17 @@
 #Scalable javascript architecture based on work by [Nicholas C. Zakas](http://www.nczonline.net/)
-Here is a video [concept presentation](http://developer.yahoo.com/yui/theater/video.php?v=zakas-architecture) which was used as the basis for this architecture.
 
-<div style="width:425px" id="__ss_1964440"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/nzakas/scalable-javascript-application-architecture" title="Scalable JavaScript Application Architecture" target="_blank">Scalable JavaScript Application Architecture</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/1964440" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/nzakas" target="_blank">Nicholas Zakas</a> </div> </div>
+* [Here is a video](http://developer.yahoo.com/yui/theater/video.php?v=zakas-architecture) which was used as the basis for this architecture.
+* [Here is a slideshare](http://developer.yahoo.com/yui/theater/video.php?v=zakas-architecture) which was used as the basis for this architecture.
+
+###Key Concepts:
+
+*Loose coupling between modules
+*Consistent sandbox interface to the application core
+*Modules only access DOM elements in their box
+*Modules don't create global objects
+*Modules only access the sandbox the rest of the architecture doesn't exist to a module
+*Sandbox can limit module access to core methods
+*Application core manages modules and communication between modules
+*Application core does general error handling
+*Application core is extensible
+*Base library (jQuery YUI etc...) is abstracted in the Application core
