@@ -1,0 +1,124 @@
+/*** The Essential Code ***/
+
+body {
+    min-width: 630px;         /* 2 x (LC fullwidth + CC padding) + RC fullwidth */
+}
+
+#page {
+    padding-left: 200px;      /* LC fullwidth */
+    padding-right: 190px;     /* RC fullwidth + CC padding */
+}
+        
+#page .module-container {
+position: relative;
+float: left;
+}
+
+#viewport-module {
+padding: 10px 20px;       /* CC padding */
+width: 100%;
+opacity:1;
+-webkit-transition-property: opacity;
+-webkit-transition-duration: 200ms;
+}
+
+#navigation-module {
+width: 180px;             /* LC width */
+padding: 0 10px;          /* LC padding */
+right: 240px;             /* LC fullwidth + CC padding */
+margin-left: -100%;
+}
+
+#api-module {
+width: 130px;             /* RC width */
+padding: 0 10px;          /* RC padding */
+margin-right: -100%;
+}
+
+#footer {
+clear: both;
+}
+
+/*** IE Fix ***/
+* html #navigation-module {
+left: 150px;              /* RC fullwidth */
+}
+
+/*** Equal-height Columns ***/
+
+#page {
+overflow: hidden;
+min-height:600px;
+height:auto !important; /*ie fix*/
+height:600px;
+}
+
+#page .module-container {
+padding-bottom: 1001em;     /* X + padding-bottom */
+margin-bottom: -1000em;     /* X */
+}
+
+/*** Footer Fix ***/
+
+* html body {
+overflow: hidden;
+}
+
+* html #footer-wrapper {
+float: left;
+position: relative;
+width: 100%;
+padding-bottom: 10010px;
+margin-bottom: -10000px;
+}
+
+/*** Just for Looks ***/
+
+body {
+margin: 0;
+padding: 0;
+}
+
+#header, #footer {
+font-size: large;
+text-align: center;
+padding: 0.3em 0;
+}
+#page .module-container {
+padding-top: 1em;
+text-align: justify;
+}
+
+p {
+    margin-bottom:1em;
+}
+#main img{
+    width:200px;
+	height:200px;
+	border:1px solid #FFFFFF;
+	padding:5px;
+	margin:10px 0 0 10px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+#main img:hover{
+	-moz-box-shadow:0 0 10px #FFF;
+	-webkit-box-shadow:0 0 10px #FFF;
+}
+
+.videos > li{
+	display:inline-block;
+}
+#playerContainer{
+	display:none;
+	position: absolute;
+}
+#viewport-module.viewport-loading{
+	opacity:0.2;
+}
+#lightbox{
+	position:fixed;
+	top:20%;
+	left:45%;
+}

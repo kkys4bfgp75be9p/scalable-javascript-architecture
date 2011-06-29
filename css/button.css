@@ -1,0 +1,48 @@
+/*Generic button styles*/
+a.button {
+	background: transparent url("../images/btn_blue_sprite.gif") no-repeat;
+	display: block;
+	float: left;
+	height: 34px;
+	margin-right: 6px;
+	padding-right: 20px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	color: #FFF;
+	text-transform:uppercase;
+	background-position: right -160px;
+}
+
+a.button span {
+	background: transparent url("../images/btn_blue_sprite.gif") no-repeat;
+	display: block;
+	line-height: 14px;
+	padding: 7px 0 7px 38px;
+}
+
+a.button:hover {
+    background-position: right -200px;
+}
+
+/*button specific styles*/
+/*arrow style button*/
+a.arrow span{
+	background-position: left 0px;
+}
+
+a.arrow:hover span {
+	background-position: left -40px;
+	color: #2C99CE;
+}
+
+/*X style button*/
+a.x span{
+    background-position: left -80px;
+}
+
+a.x:hover span {
+	background-position: left -120px;
+	color: #2C99CE;
+}
